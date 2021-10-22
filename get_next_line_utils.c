@@ -6,7 +6,7 @@
 /*   By: yalthaus <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 14:14:21 by yalthaus          #+#    #+#             */
-/*   Updated: 2021/10/19 20:12:07 by yalthaus         ###   ########.fr       */
+/*   Updated: 2021/10/22 17:25:43 by yalthaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		*(str + i + j) = *(s2 + j);
 		j++;
 	}
+	free(s1);
 	*(str + i + j) = '\0';
 	return (str);
 }
